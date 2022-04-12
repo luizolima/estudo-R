@@ -6,6 +6,8 @@
 # Criando variáveis
 # Para executar clique sobre a linha ou selecione o conjunto de linhas
 # e precione Ctrl + enter
+getwd()
+setwd("D:/estudos/courses/DidaticaTech/R")
 
 a <- 10
 a
@@ -43,3 +45,30 @@ c
 
 # Help
 ?c
+
+c <- c("Heitor", "João")
+c
+
+a <- c(10, 5, 15, 20)
+a
+
+?summary
+
+summary(a)
+summary(c)
+
+# Função de um pacote não padrão
+?str_c
+
+install.packages("stringr")
+library(stringr)
+
+?str_c
+
+Nome <- "Joao"
+Sobrenome <- "Santos"
+
+NomeCompleto <- str_c(Nome, Sobrenome)
+NomeCompleto
+NomeCompleto <- str_c(Nome, " ",Sobrenome)
+NomeCompleto
